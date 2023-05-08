@@ -1,0 +1,20 @@
+<p>modificar works!</p>
+<h2>{{titulo}}</h2>
+<form action="">
+  <label>Nombre </label>
+  <input type="text" name="nombre" id="nombre" [(ngModel)]="fNombre"><br>
+  <label>Alias </label>
+  <input type="text" name="alias" id="alias" [(ngModel)]="fAlias"><br>
+  <label>Poder </label>
+  <input type="text" name="poder" id="poder" [(ngModel)]="fPoder"><br>
+  <label>Nivel Poder </label>
+  <input type="text" name="nivel" id="nivel" [(ngModel)]="fNivel"><br>
+
+  <button *ngIf="action==1" type="submit" (click)="modificarHeroe()">Modificar Heroe</button>
+  <button *ngIf="action==2" type="submit" (click)="eliminarHeroe()">Eliminar Heroe</button>
+</form>
+
+
+<div>
+  <button (click)="volverHome()">Volver al Home</button>
+</div>

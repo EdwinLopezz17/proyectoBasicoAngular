@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <h1>{{titulo}}</h1>
+  <br><br>
+  <form action="">
+    <label>Nombre </label>
+    <input type="text" name="nombre" id="nombre" [(ngModel)]="fNombre"><br>
+    <label>Alias </label>
+    <input type="text" name="alias" id="alias" [(ngModel)]="fAlias"><br>
+    <label>Poder </label>
+    <input type="text" name="poder" id="poder" [(ngModel)]="fPoder"><br>
+    <label>Nivel Poder </label>
+    <input type="text" name="nivel" id="nivel" [(ngModel)]="fNivel"><br>
+
+    <button type="submit" (click)="agregarHeroe()">Agregar Heroe</button>
+  </form>
+</div>
+
+<app-heroe  *ngFor="let hero of heroes; let i= index" [hero]="hero" [indice]="i"></app-heroe>
+
+

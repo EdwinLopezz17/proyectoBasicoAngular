@@ -1,0 +1,12 @@
+
+
+<div class="container">
+  <div>
+
+      {{indice+1}}. <a [routerLink]="['/modificar', indice]">{{hero.nombre}}</a> {{hero.alias}}
+    {{hero.poder}} {{hero.nivelPoder}}
+    <a [routerLink]="['/modificar',indice]" [queryParams]="{action:1}">Modificar</a>
+    <a [routerLink]="['/modificar',indice]" [queryParams]="{action:2}">Eliminar</a>
+
+  </div>
+</div>
